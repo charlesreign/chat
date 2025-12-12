@@ -1,0 +1,124 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.login-card h2 {
+  text-align: center;
+  color: #667eea;
+  margin: 0 0 30px 0;
+  font-size: 24px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-card input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.login-card button[type="submit"] {
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-card button[type="submit"]:hover:not(:disabled) {
+  background: #764ba2;
+}
+
+.login-card button[type="submit"]:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.login-card p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #667eea;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.toggle-btn:hover {
+  color: #764ba2;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.message.error {
+  background-color: #ffe0e0;
+  color: #c33;
+}
+
+.message.success {
+  background-color: #e0ffe0;
+  color: #3c3;
+}

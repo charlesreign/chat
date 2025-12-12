@@ -1,0 +1,18 @@
+.App {
+  /* display: flex; */
+  height: 100vh;
+  background-color: #fff;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-main {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+}
